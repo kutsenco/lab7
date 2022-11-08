@@ -25,7 +25,7 @@ def common_names(female_names, male_names) :
     """
     female_names = set(female_names)
     male_names = set(male_names)
-    result = male_names & female_names
+    result = female_names & male_names
     letter = ['A', 'E', 'I', 'O', 'U', 'Y']
     result_final = [o for o in result if o[0] in letter]
     result_final = set(result_final)
